@@ -1,0 +1,1176 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3BEF1E4A01EFEC93B65F4FE8 /* Pods_MuzArbuzSite_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA4FC038A15B3F0A7727CBA2 /* Pods_MuzArbuzSite_tvOS.framework */; };
+		9BC778D862EC62A4B3C66CD3 /* Pods_MuzArbuzSite_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31EB3610A3F09F642A5F12DF /* Pods_MuzArbuzSite_iOS.framework */; };
+		B1F6A393859D89947028C0B7 /* Pods_MuzArbuzSite_tvOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE91A1DDB4B00D3FDCDAD39F /* Pods_MuzArbuzSite_tvOSTests.framework */; };
+		C67027368C71D121A8756BC3 /* Pods_MuzArbuzSite_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 102EEA73C38990327211282A /* Pods_MuzArbuzSite_iOSTests.framework */; };
+		FAD7BC7D1EECC797004F63B9 /* MuzArbuzSite_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD7BC731EECC797004F63B9 /* MuzArbuzSite_iOS.framework */; };
+		FAD7BC821EECC797004F63B9 /* MuzArbuzSite_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD7BC811EECC797004F63B9 /* MuzArbuzSite_iOSTests.swift */; };
+		FAD7BC841EECC797004F63B9 /* MuzArbuzSite_iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = FAD7BC761EECC797004F63B9 /* MuzArbuzSite_iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FAD7BC991EECC7D2004F63B9 /* MuzArbuzSite_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD7BC901EECC7D1004F63B9 /* MuzArbuzSite_tvOS.framework */; };
+		FAD7BC9E1EECC7D2004F63B9 /* MuzArbuzSite_tvOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD7BC9D1EECC7D2004F63B9 /* MuzArbuzSite_tvOSTests.swift */; };
+		FAD7BCA01EECC7D2004F63B9 /* MuzArbuzSite_tvOS.h in Headers */ = {isa = PBXBuildFile; fileRef = FAD7BC921EECC7D1004F63B9 /* MuzArbuzSite_tvOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FAD7BCB31EECC835004F63B9 /* ios in Resources */ = {isa = PBXBuildFile; fileRef = FAD7BCA81EECC835004F63B9 /* ios */; };
+		FAD7BCB41EECC835004F63B9 /* BestBooksTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD7BCA91EECC835004F63B9 /* BestBooksTableController.swift */; };
+		FAD7BCB51EECC835004F63B9 /* GenresTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD7BCAA1EECC835004F63B9 /* GenresTableViewController.swift */; };
+		FAD7BCB61EECC835004F63B9 /* MuzArbuzBaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD7BCAB1EECC835004F63B9 /* MuzArbuzBaseTableViewController.swift */; };
+		FAD7BCB71EECC835004F63B9 /* MuzArbuzTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD7BCAC1EECC835004F63B9 /* MuzArbuzTableViewController.swift */; };
+		FAD7BCB81EECC835004F63B9 /* SettingsTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD7BCAD1EECC835004F63B9 /* SettingsTableController.swift */; };
+		FAD7BCB91EECC835004F63B9 /* MuzArbuzDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD7BCAE1EECC835004F63B9 /* MuzArbuzDataSource.swift */; };
+		FAD7BCBA1EECC835004F63B9 /* MuzArbuzMediaItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD7BCAF1EECC835004F63B9 /* MuzArbuzMediaItem.swift */; };
+		FAD7BCBB1EECC835004F63B9 /* MuzArbuzService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD7BCB01EECC835004F63B9 /* MuzArbuzService.swift */; };
+		FAD7BCBC1EECC835004F63B9 /* MuzArbuzServiceAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD7BCB11EECC835004F63B9 /* MuzArbuzServiceAdapter.swift */; };
+		FAD7BCBD1EECC835004F63B9 /* MuzArbuzSite.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD7BCB21EECC835004F63B9 /* MuzArbuzSite.swift */; };
+		FAD7BCC01EECC8DD004F63B9 /* MuzArbuzSite.podspec in Resources */ = {isa = PBXBuildFile; fileRef = FAD7BCBE1EECC8DD004F63B9 /* MuzArbuzSite.podspec */; };
+		FAD7BCC11EECC8DD004F63B9 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = FAD7BCBF1EECC8DD004F63B9 /* Podfile */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FAD7BC7E1EECC797004F63B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAD7BC681EECC77B004F63B9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAD7BC721EECC797004F63B9;
+			remoteInfo = MuzArbuzSite_iOS;
+		};
+		FAD7BC9A1EECC7D2004F63B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAD7BC681EECC77B004F63B9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAD7BC8F1EECC7D1004F63B9;
+			remoteInfo = MuzArbuzSite_tvOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		102EEA73C38990327211282A /* Pods_MuzArbuzSite_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MuzArbuzSite_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		139FEB1E21F68599B64A8EAE /* Pods-MuzArbuzSite_tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MuzArbuzSite_tvOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MuzArbuzSite_tvOSTests/Pods-MuzArbuzSite_tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2A47FF714DA147ACA0352AC0 /* Pods-MuzArbuzSite_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MuzArbuzSite_iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-MuzArbuzSite_iOS/Pods-MuzArbuzSite_iOS.release.xcconfig"; sourceTree = "<group>"; };
+		31EB3610A3F09F642A5F12DF /* Pods_MuzArbuzSite_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MuzArbuzSite_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		45D8E670D0D17362EC7AE411 /* Pods-MuzArbuzSite_tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MuzArbuzSite_tvOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MuzArbuzSite_tvOS/Pods-MuzArbuzSite_tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		4C64FEC7DD5BFDDA028EA717 /* Pods-MuzArbuzSite_iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MuzArbuzSite_iOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MuzArbuzSite_iOSTests/Pods-MuzArbuzSite_iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BA36E5E1892EEB64CCBE7D10 /* Pods-MuzArbuzSite_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MuzArbuzSite_iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MuzArbuzSite_iOS/Pods-MuzArbuzSite_iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		C7A750303DA888D656B0B0AC /* Pods-MuzArbuzSite_iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MuzArbuzSite_iOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MuzArbuzSite_iOSTests/Pods-MuzArbuzSite_iOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		C90E623F2E2F99DC161AC968 /* Pods-MuzArbuzSite_tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MuzArbuzSite_tvOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-MuzArbuzSite_tvOS/Pods-MuzArbuzSite_tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		DA4FC038A15B3F0A7727CBA2 /* Pods_MuzArbuzSite_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MuzArbuzSite_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAD7BC731EECC797004F63B9 /* MuzArbuzSite_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MuzArbuzSite_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAD7BC761EECC797004F63B9 /* MuzArbuzSite_iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MuzArbuzSite_iOS.h; sourceTree = "<group>"; };
+		FAD7BC771EECC797004F63B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAD7BC7C1EECC797004F63B9 /* MuzArbuzSite_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MuzArbuzSite_iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAD7BC811EECC797004F63B9 /* MuzArbuzSite_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuzArbuzSite_iOSTests.swift; sourceTree = "<group>"; };
+		FAD7BC831EECC797004F63B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAD7BC901EECC7D1004F63B9 /* MuzArbuzSite_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MuzArbuzSite_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAD7BC921EECC7D1004F63B9 /* MuzArbuzSite_tvOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MuzArbuzSite_tvOS.h; sourceTree = "<group>"; };
+		FAD7BC931EECC7D1004F63B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAD7BC981EECC7D1004F63B9 /* MuzArbuzSite_tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MuzArbuzSite_tvOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAD7BC9D1EECC7D2004F63B9 /* MuzArbuzSite_tvOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuzArbuzSite_tvOSTests.swift; sourceTree = "<group>"; };
+		FAD7BC9F1EECC7D2004F63B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAD7BCA81EECC835004F63B9 /* ios */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ios; sourceTree = "<group>"; };
+		FAD7BCA91EECC835004F63B9 /* BestBooksTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BestBooksTableController.swift; path = ios/BestBooksTableController.swift; sourceTree = "<group>"; };
+		FAD7BCAA1EECC835004F63B9 /* GenresTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GenresTableViewController.swift; path = ios/GenresTableViewController.swift; sourceTree = "<group>"; };
+		FAD7BCAB1EECC835004F63B9 /* MuzArbuzBaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MuzArbuzBaseTableViewController.swift; path = ios/MuzArbuzBaseTableViewController.swift; sourceTree = "<group>"; };
+		FAD7BCAC1EECC835004F63B9 /* MuzArbuzTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MuzArbuzTableViewController.swift; path = ios/MuzArbuzTableViewController.swift; sourceTree = "<group>"; };
+		FAD7BCAD1EECC835004F63B9 /* SettingsTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsTableController.swift; path = ios/SettingsTableController.swift; sourceTree = "<group>"; };
+		FAD7BCAE1EECC835004F63B9 /* MuzArbuzDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MuzArbuzDataSource.swift; sourceTree = "<group>"; };
+		FAD7BCAF1EECC835004F63B9 /* MuzArbuzMediaItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MuzArbuzMediaItem.swift; sourceTree = "<group>"; };
+		FAD7BCB01EECC835004F63B9 /* MuzArbuzService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MuzArbuzService.swift; sourceTree = "<group>"; };
+		FAD7BCB11EECC835004F63B9 /* MuzArbuzServiceAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MuzArbuzServiceAdapter.swift; sourceTree = "<group>"; };
+		FAD7BCB21EECC835004F63B9 /* MuzArbuzSite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MuzArbuzSite.swift; sourceTree = "<group>"; };
+		FAD7BCBE1EECC8DD004F63B9 /* MuzArbuzSite.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MuzArbuzSite.podspec; sourceTree = "<group>"; };
+		FAD7BCBF1EECC8DD004F63B9 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		FCBCE03907B86B02A89CE976 /* Pods-MuzArbuzSite_tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MuzArbuzSite_tvOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MuzArbuzSite_tvOSTests/Pods-MuzArbuzSite_tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		FE91A1DDB4B00D3FDCDAD39F /* Pods_MuzArbuzSite_tvOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MuzArbuzSite_tvOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FAD7BC6F1EECC797004F63B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BC778D862EC62A4B3C66CD3 /* Pods_MuzArbuzSite_iOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAD7BC791EECC797004F63B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAD7BC7D1EECC797004F63B9 /* MuzArbuzSite_iOS.framework in Frameworks */,
+				C67027368C71D121A8756BC3 /* Pods_MuzArbuzSite_iOSTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAD7BC8C1EECC7D1004F63B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BEF1E4A01EFEC93B65F4FE8 /* Pods_MuzArbuzSite_tvOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAD7BC951EECC7D1004F63B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAD7BC991EECC7D2004F63B9 /* MuzArbuzSite_tvOS.framework in Frameworks */,
+				B1F6A393859D89947028C0B7 /* Pods_MuzArbuzSite_tvOSTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2B71D7A6ACEDAD5BCC2E4060 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BA36E5E1892EEB64CCBE7D10 /* Pods-MuzArbuzSite_iOS.debug.xcconfig */,
+				2A47FF714DA147ACA0352AC0 /* Pods-MuzArbuzSite_iOS.release.xcconfig */,
+				4C64FEC7DD5BFDDA028EA717 /* Pods-MuzArbuzSite_iOSTests.debug.xcconfig */,
+				C7A750303DA888D656B0B0AC /* Pods-MuzArbuzSite_iOSTests.release.xcconfig */,
+				45D8E670D0D17362EC7AE411 /* Pods-MuzArbuzSite_tvOS.debug.xcconfig */,
+				C90E623F2E2F99DC161AC968 /* Pods-MuzArbuzSite_tvOS.release.xcconfig */,
+				139FEB1E21F68599B64A8EAE /* Pods-MuzArbuzSite_tvOSTests.debug.xcconfig */,
+				FCBCE03907B86B02A89CE976 /* Pods-MuzArbuzSite_tvOSTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		76D14B14ABA9F2C9508FF0DB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				31EB3610A3F09F642A5F12DF /* Pods_MuzArbuzSite_iOS.framework */,
+				102EEA73C38990327211282A /* Pods_MuzArbuzSite_iOSTests.framework */,
+				DA4FC038A15B3F0A7727CBA2 /* Pods_MuzArbuzSite_tvOS.framework */,
+				FE91A1DDB4B00D3FDCDAD39F /* Pods_MuzArbuzSite_tvOSTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FAD7BC671EECC77B004F63B9 = {
+			isa = PBXGroup;
+			children = (
+				FAD7BCBE1EECC8DD004F63B9 /* MuzArbuzSite.podspec */,
+				FAD7BCBF1EECC8DD004F63B9 /* Podfile */,
+				FAD7BCA71EECC80A004F63B9 /* Sources */,
+				FAD7BC751EECC797004F63B9 /* MuzArbuzSite_iOS */,
+				FAD7BC801EECC797004F63B9 /* MuzArbuzSite_iOSTests */,
+				FAD7BC911EECC7D1004F63B9 /* MuzArbuzSite_tvOS */,
+				FAD7BC9C1EECC7D2004F63B9 /* MuzArbuzSite_tvOSTests */,
+				FAD7BC741EECC797004F63B9 /* Products */,
+				2B71D7A6ACEDAD5BCC2E4060 /* Pods */,
+				76D14B14ABA9F2C9508FF0DB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FAD7BC741EECC797004F63B9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAD7BC731EECC797004F63B9 /* MuzArbuzSite_iOS.framework */,
+				FAD7BC7C1EECC797004F63B9 /* MuzArbuzSite_iOSTests.xctest */,
+				FAD7BC901EECC7D1004F63B9 /* MuzArbuzSite_tvOS.framework */,
+				FAD7BC981EECC7D1004F63B9 /* MuzArbuzSite_tvOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FAD7BC751EECC797004F63B9 /* MuzArbuzSite_iOS */ = {
+			isa = PBXGroup;
+			children = (
+				FAD7BC761EECC797004F63B9 /* MuzArbuzSite_iOS.h */,
+				FAD7BC771EECC797004F63B9 /* Info.plist */,
+			);
+			path = MuzArbuzSite_iOS;
+			sourceTree = "<group>";
+		};
+		FAD7BC801EECC797004F63B9 /* MuzArbuzSite_iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				FAD7BC811EECC797004F63B9 /* MuzArbuzSite_iOSTests.swift */,
+				FAD7BC831EECC797004F63B9 /* Info.plist */,
+			);
+			path = MuzArbuzSite_iOSTests;
+			sourceTree = "<group>";
+		};
+		FAD7BC911EECC7D1004F63B9 /* MuzArbuzSite_tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				FAD7BC921EECC7D1004F63B9 /* MuzArbuzSite_tvOS.h */,
+				FAD7BC931EECC7D1004F63B9 /* Info.plist */,
+			);
+			path = MuzArbuzSite_tvOS;
+			sourceTree = "<group>";
+		};
+		FAD7BC9C1EECC7D2004F63B9 /* MuzArbuzSite_tvOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				FAD7BC9D1EECC7D2004F63B9 /* MuzArbuzSite_tvOSTests.swift */,
+				FAD7BC9F1EECC7D2004F63B9 /* Info.plist */,
+			);
+			path = MuzArbuzSite_tvOSTests;
+			sourceTree = "<group>";
+		};
+		FAD7BCA71EECC80A004F63B9 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				FAD7BCA81EECC835004F63B9 /* ios */,
+				FAD7BCA91EECC835004F63B9 /* BestBooksTableController.swift */,
+				FAD7BCAA1EECC835004F63B9 /* GenresTableViewController.swift */,
+				FAD7BCAB1EECC835004F63B9 /* MuzArbuzBaseTableViewController.swift */,
+				FAD7BCAC1EECC835004F63B9 /* MuzArbuzTableViewController.swift */,
+				FAD7BCAD1EECC835004F63B9 /* SettingsTableController.swift */,
+				FAD7BCAE1EECC835004F63B9 /* MuzArbuzDataSource.swift */,
+				FAD7BCAF1EECC835004F63B9 /* MuzArbuzMediaItem.swift */,
+				FAD7BCB01EECC835004F63B9 /* MuzArbuzService.swift */,
+				FAD7BCB11EECC835004F63B9 /* MuzArbuzServiceAdapter.swift */,
+				FAD7BCB21EECC835004F63B9 /* MuzArbuzSite.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		FAD7BC701EECC797004F63B9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAD7BC841EECC797004F63B9 /* MuzArbuzSite_iOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAD7BC8D1EECC7D1004F63B9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAD7BCA01EECC7D2004F63B9 /* MuzArbuzSite_tvOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		FAD7BC721EECC797004F63B9 /* MuzArbuzSite_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAD7BC851EECC797004F63B9 /* Build configuration list for PBXNativeTarget "MuzArbuzSite_iOS" */;
+			buildPhases = (
+				875A32B25AC8233D5BAFF2FE /* [CP] Check Pods Manifest.lock */,
+				FAD7BC6E1EECC797004F63B9 /* Sources */,
+				FAD7BC6F1EECC797004F63B9 /* Frameworks */,
+				FAD7BC701EECC797004F63B9 /* Headers */,
+				FAD7BC711EECC797004F63B9 /* Resources */,
+				67478BE3A238FEE7FD59366C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MuzArbuzSite_iOS;
+			productName = MuzArbuzSite_iOS;
+			productReference = FAD7BC731EECC797004F63B9 /* MuzArbuzSite_iOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FAD7BC7B1EECC797004F63B9 /* MuzArbuzSite_iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAD7BC881EECC797004F63B9 /* Build configuration list for PBXNativeTarget "MuzArbuzSite_iOSTests" */;
+			buildPhases = (
+				86B78B75C63EDBCFFBB942A2 /* [CP] Check Pods Manifest.lock */,
+				FAD7BC781EECC797004F63B9 /* Sources */,
+				FAD7BC791EECC797004F63B9 /* Frameworks */,
+				FAD7BC7A1EECC797004F63B9 /* Resources */,
+				DE6806DB5E59F28FCA65F7CD /* [CP] Embed Pods Frameworks */,
+				5610D75DC5CABFE0FD429804 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAD7BC7F1EECC797004F63B9 /* PBXTargetDependency */,
+			);
+			name = MuzArbuzSite_iOSTests;
+			productName = MuzArbuzSite_iOSTests;
+			productReference = FAD7BC7C1EECC797004F63B9 /* MuzArbuzSite_iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FAD7BC8F1EECC7D1004F63B9 /* MuzArbuzSite_tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAD7BCA11EECC7D2004F63B9 /* Build configuration list for PBXNativeTarget "MuzArbuzSite_tvOS" */;
+			buildPhases = (
+				7C317D9ACD1633C1E8DB104D /* [CP] Check Pods Manifest.lock */,
+				FAD7BC8B1EECC7D1004F63B9 /* Sources */,
+				FAD7BC8C1EECC7D1004F63B9 /* Frameworks */,
+				FAD7BC8D1EECC7D1004F63B9 /* Headers */,
+				FAD7BC8E1EECC7D1004F63B9 /* Resources */,
+				CC45340BB40CD435845E07E2 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MuzArbuzSite_tvOS;
+			productName = MuzArbuzSite_tvOS;
+			productReference = FAD7BC901EECC7D1004F63B9 /* MuzArbuzSite_tvOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FAD7BC971EECC7D1004F63B9 /* MuzArbuzSite_tvOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAD7BCA41EECC7D2004F63B9 /* Build configuration list for PBXNativeTarget "MuzArbuzSite_tvOSTests" */;
+			buildPhases = (
+				EF2662C7066670DCEDE6A76C /* [CP] Check Pods Manifest.lock */,
+				FAD7BC941EECC7D1004F63B9 /* Sources */,
+				FAD7BC951EECC7D1004F63B9 /* Frameworks */,
+				FAD7BC961EECC7D1004F63B9 /* Resources */,
+				1F17C363E5A64BE6281C2494 /* [CP] Embed Pods Frameworks */,
+				E51920B6F7F8532CEE396A9C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAD7BC9B1EECC7D2004F63B9 /* PBXTargetDependency */,
+			);
+			name = MuzArbuzSite_tvOSTests;
+			productName = MuzArbuzSite_tvOSTests;
+			productReference = FAD7BC981EECC7D1004F63B9 /* MuzArbuzSite_tvOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FAD7BC681EECC77B004F63B9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				TargetAttributes = {
+					FAD7BC721EECC797004F63B9 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = Y63DEDERL2;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+					FAD7BC7B1EECC797004F63B9 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = Y63DEDERL2;
+						ProvisioningStyle = Automatic;
+					};
+					FAD7BC8F1EECC7D1004F63B9 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = Y63DEDERL2;
+						ProvisioningStyle = Automatic;
+					};
+					FAD7BC971EECC7D1004F63B9 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = Y63DEDERL2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = FAD7BC6B1EECC77B004F63B9 /* Build configuration list for PBXProject "MuzArbuzSite" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FAD7BC671EECC77B004F63B9;
+			productRefGroup = FAD7BC741EECC797004F63B9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FAD7BC721EECC797004F63B9 /* MuzArbuzSite_iOS */,
+				FAD7BC7B1EECC797004F63B9 /* MuzArbuzSite_iOSTests */,
+				FAD7BC8F1EECC7D1004F63B9 /* MuzArbuzSite_tvOS */,
+				FAD7BC971EECC7D1004F63B9 /* MuzArbuzSite_tvOSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FAD7BC711EECC797004F63B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAD7BCC11EECC8DD004F63B9 /* Podfile in Resources */,
+				FAD7BCB31EECC835004F63B9 /* ios in Resources */,
+				FAD7BCC01EECC8DD004F63B9 /* MuzArbuzSite.podspec in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAD7BC7A1EECC797004F63B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAD7BC8E1EECC7D1004F63B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAD7BC961EECC7D1004F63B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1F17C363E5A64BE6281C2494 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MuzArbuzSite_tvOSTests/Pods-MuzArbuzSite_tvOSTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5610D75DC5CABFE0FD429804 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MuzArbuzSite_iOSTests/Pods-MuzArbuzSite_iOSTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		67478BE3A238FEE7FD59366C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MuzArbuzSite_iOS/Pods-MuzArbuzSite_iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7C317D9ACD1633C1E8DB104D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		86B78B75C63EDBCFFBB942A2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		875A32B25AC8233D5BAFF2FE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CC45340BB40CD435845E07E2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MuzArbuzSite_tvOS/Pods-MuzArbuzSite_tvOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE6806DB5E59F28FCA65F7CD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MuzArbuzSite_iOSTests/Pods-MuzArbuzSite_iOSTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E51920B6F7F8532CEE396A9C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MuzArbuzSite_tvOSTests/Pods-MuzArbuzSite_tvOSTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF2662C7066670DCEDE6A76C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FAD7BC6E1EECC797004F63B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAD7BCBD1EECC835004F63B9 /* MuzArbuzSite.swift in Sources */,
+				FAD7BCB41EECC835004F63B9 /* BestBooksTableController.swift in Sources */,
+				FAD7BCBB1EECC835004F63B9 /* MuzArbuzService.swift in Sources */,
+				FAD7BCBC1EECC835004F63B9 /* MuzArbuzServiceAdapter.swift in Sources */,
+				FAD7BCB71EECC835004F63B9 /* MuzArbuzTableViewController.swift in Sources */,
+				FAD7BCB61EECC835004F63B9 /* MuzArbuzBaseTableViewController.swift in Sources */,
+				FAD7BCB51EECC835004F63B9 /* GenresTableViewController.swift in Sources */,
+				FAD7BCBA1EECC835004F63B9 /* MuzArbuzMediaItem.swift in Sources */,
+				FAD7BCB91EECC835004F63B9 /* MuzArbuzDataSource.swift in Sources */,
+				FAD7BCB81EECC835004F63B9 /* SettingsTableController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAD7BC781EECC797004F63B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAD7BC821EECC797004F63B9 /* MuzArbuzSite_iOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAD7BC8B1EECC7D1004F63B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAD7BC941EECC7D1004F63B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAD7BC9E1EECC7D2004F63B9 /* MuzArbuzSite_tvOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FAD7BC7F1EECC797004F63B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAD7BC721EECC797004F63B9 /* MuzArbuzSite_iOS */;
+			targetProxy = FAD7BC7E1EECC797004F63B9 /* PBXContainerItemProxy */;
+		};
+		FAD7BC9B1EECC7D2004F63B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAD7BC8F1EECC7D1004F63B9 /* MuzArbuzSite_tvOS */;
+			targetProxy = FAD7BC9A1EECC7D2004F63B9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FAD7BC6C1EECC77B004F63B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		FAD7BC6D1EECC77B004F63B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		FAD7BC861EECC797004F63B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA36E5E1892EEB64CCBE7D10 /* Pods-MuzArbuzSite_iOS.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = Y63DEDERL2;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = MuzArbuzSite_iOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rubikon.MuzArbuzSite-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FAD7BC871EECC797004F63B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A47FF714DA147ACA0352AC0 /* Pods-MuzArbuzSite_iOS.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = Y63DEDERL2;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = MuzArbuzSite_iOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rubikon.MuzArbuzSite-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FAD7BC891EECC797004F63B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C64FEC7DD5BFDDA028EA717 /* Pods-MuzArbuzSite_iOSTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = Y63DEDERL2;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = MuzArbuzSite_iOSTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rubikon.MuzArbuzSite-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		FAD7BC8A1EECC797004F63B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7A750303DA888D656B0B0AC /* Pods-MuzArbuzSite_iOSTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = Y63DEDERL2;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = MuzArbuzSite_iOSTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rubikon.MuzArbuzSite-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FAD7BCA21EECC7D2004F63B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45D8E670D0D17362EC7AE411 /* Pods-MuzArbuzSite_tvOS.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = Y63DEDERL2;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = MuzArbuzSite_tvOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rubikon.MuzArbuzSite-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.2;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FAD7BCA31EECC7D2004F63B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C90E623F2E2F99DC161AC968 /* Pods-MuzArbuzSite_tvOS.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = Y63DEDERL2;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = MuzArbuzSite_tvOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rubikon.MuzArbuzSite-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.2;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FAD7BCA51EECC7D2004F63B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 139FEB1E21F68599B64A8EAE /* Pods-MuzArbuzSite_tvOSTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = Y63DEDERL2;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = MuzArbuzSite_tvOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rubikon.MuzArbuzSite-tvOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TVOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Debug;
+		};
+		FAD7BCA61EECC7D2004F63B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCBCE03907B86B02A89CE976 /* Pods-MuzArbuzSite_tvOSTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = Y63DEDERL2;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = MuzArbuzSite_tvOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rubikon.MuzArbuzSite-tvOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TVOS_DEPLOYMENT_TARGET = 10.2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FAD7BC6B1EECC77B004F63B9 /* Build configuration list for PBXProject "MuzArbuzSite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAD7BC6C1EECC77B004F63B9 /* Debug */,
+				FAD7BC6D1EECC77B004F63B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAD7BC851EECC797004F63B9 /* Build configuration list for PBXNativeTarget "MuzArbuzSite_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAD7BC861EECC797004F63B9 /* Debug */,
+				FAD7BC871EECC797004F63B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAD7BC881EECC797004F63B9 /* Build configuration list for PBXNativeTarget "MuzArbuzSite_iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAD7BC891EECC797004F63B9 /* Debug */,
+				FAD7BC8A1EECC797004F63B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAD7BCA11EECC7D2004F63B9 /* Build configuration list for PBXNativeTarget "MuzArbuzSite_tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAD7BCA21EECC7D2004F63B9 /* Debug */,
+				FAD7BCA31EECC7D2004F63B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAD7BCA41EECC7D2004F63B9 /* Build configuration list for PBXNativeTarget "MuzArbuzSite_tvOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAD7BCA51EECC7D2004F63B9 /* Debug */,
+				FAD7BCA61EECC7D2004F63B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FAD7BC681EECC77B004F63B9 /* Project object */;
+}
