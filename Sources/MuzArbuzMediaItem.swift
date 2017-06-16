@@ -9,17 +9,22 @@ class MuzArbuzMediaItem: MediaItem {
   override init(data: JSON) {
     super.init(data: data)
 
-    self.items = []
+    //self.name = data["title"].stringValue
+    self.thumb = "\(MuzArbuzAPI.SiteUrl)\(data["thumb"])"
 
-    let items = data["items"].arrayValue
+    print(self.thumb)
 
-    for item in items {
-      self.items.append(item)
-    }
+//    self.items = []
+//
+//    let items = data["items"].arrayValue
+//
+//    for item in items {
+//      self.items.append(item)
+//    }
   }
   
   override func isContainer() -> Bool {
-    return type == "book" || type == "tracks"
+    return type == "album" || type == "double_album" || type == "tracks"
   }
 
   override func isAudioContainer() -> Bool {

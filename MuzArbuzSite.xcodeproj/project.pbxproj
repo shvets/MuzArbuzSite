@@ -11,6 +11,7 @@
 		9BC778D862EC62A4B3C66CD3 /* Pods_MuzArbuzSite_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31EB3610A3F09F642A5F12DF /* Pods_MuzArbuzSite_iOS.framework */; };
 		B1F6A393859D89947028C0B7 /* Pods_MuzArbuzSite_tvOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE91A1DDB4B00D3FDCDAD39F /* Pods_MuzArbuzSite_tvOSTests.framework */; };
 		C67027368C71D121A8756BC3 /* Pods_MuzArbuzSite_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 102EEA73C38990327211282A /* Pods_MuzArbuzSite_iOSTests.framework */; };
+		FA800C5A1EECD52200CB8805 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA800C5C1EECD52200CB8805 /* Localizable.strings */; };
 		FAD7BC7D1EECC797004F63B9 /* MuzArbuzSite_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD7BC731EECC797004F63B9 /* MuzArbuzSite_iOS.framework */; };
 		FAD7BC821EECC797004F63B9 /* MuzArbuzSite_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD7BC811EECC797004F63B9 /* MuzArbuzSite_iOSTests.swift */; };
 		FAD7BC841EECC797004F63B9 /* MuzArbuzSite_iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = FAD7BC761EECC797004F63B9 /* MuzArbuzSite_iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -60,6 +61,8 @@
 		C7A750303DA888D656B0B0AC /* Pods-MuzArbuzSite_iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MuzArbuzSite_iOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MuzArbuzSite_iOSTests/Pods-MuzArbuzSite_iOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		C90E623F2E2F99DC161AC968 /* Pods-MuzArbuzSite_tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MuzArbuzSite_tvOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-MuzArbuzSite_tvOS/Pods-MuzArbuzSite_tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		DA4FC038A15B3F0A7727CBA2 /* Pods_MuzArbuzSite_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MuzArbuzSite_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA800C5B1EECD52200CB8805 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		FA8E1EA21EECD55600120AEF /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		FAD7BC731EECC797004F63B9 /* MuzArbuzSite_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MuzArbuzSite_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAD7BC761EECC797004F63B9 /* MuzArbuzSite_iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MuzArbuzSite_iOS.h; sourceTree = "<group>"; };
 		FAD7BC771EECC797004F63B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -84,7 +87,7 @@
 		FAD7BCB11EECC835004F63B9 /* MuzArbuzServiceAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MuzArbuzServiceAdapter.swift; sourceTree = "<group>"; };
 		FAD7BCB21EECC835004F63B9 /* MuzArbuzSite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MuzArbuzSite.swift; sourceTree = "<group>"; };
 		FAD7BCBE1EECC8DD004F63B9 /* MuzArbuzSite.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MuzArbuzSite.podspec; sourceTree = "<group>"; };
-		FAD7BCBF1EECC8DD004F63B9 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		FAD7BCBF1EECC8DD004F63B9 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		FCBCE03907B86B02A89CE976 /* Pods-MuzArbuzSite_tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MuzArbuzSite_tvOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MuzArbuzSite_tvOSTests/Pods-MuzArbuzSite_tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		FE91A1DDB4B00D3FDCDAD39F /* Pods_MuzArbuzSite_tvOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MuzArbuzSite_tvOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -230,6 +233,7 @@
 				FAD7BCB01EECC835004F63B9 /* MuzArbuzService.swift */,
 				FAD7BCB11EECC835004F63B9 /* MuzArbuzServiceAdapter.swift */,
 				FAD7BCB21EECC835004F63B9 /* MuzArbuzSite.swift */,
+				FA800C5C1EECD52200CB8805 /* Localizable.strings */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -376,6 +380,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				ru,
 			);
 			mainGroup = FAD7BC671EECC77B004F63B9;
 			productRefGroup = FAD7BC741EECC797004F63B9 /* Products */;
@@ -396,6 +401,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAD7BCC11EECC8DD004F63B9 /* Podfile in Resources */,
+				FA800C5A1EECD52200CB8805 /* Localizable.strings in Resources */,
 				FAD7BCB31EECC835004F63B9 /* ios in Resources */,
 				FAD7BCC01EECC8DD004F63B9 /* MuzArbuzSite.podspec in Resources */,
 			);
@@ -633,16 +639,30 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		FA800C5C1EECD52200CB8805 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA800C5B1EECD52200CB8805 /* en */,
+				FA8E1EA21EECD55600120AEF /* ru */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		FAD7BC6C1EECC77B004F63B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 			};
 			name = Debug;
 		};
 		FAD7BC6D1EECC77B004F63B9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 			};
 			name = Release;
 		};

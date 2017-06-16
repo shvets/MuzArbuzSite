@@ -1,10 +1,10 @@
 import UIKit
 import TVSetKit
 
-class GenresTableViewController: MuzArbuzBaseTableViewController {
-  static let SegueIdentifier = "Genres"
+class AlbumsCollectionViewController: MuzArbuzBaseCollectionViewController {
+  static let SegueIdentifier = "Albums"
 
-  override open var CellIdentifier: String { return "GenreTableCell" }
+  override open var CellIdentifier: String { return "AlbumCell" }
   override open var BundleId: String { return MuzArbuzServiceAdapter.BundleId }
 
   override func viewDidLoad() {
@@ -12,7 +12,7 @@ class GenresTableViewController: MuzArbuzBaseTableViewController {
 
     self.clearsSelectionOnViewWillAppear = false
 
-    title = localizer.localize("Genres")
+    title = localizer.localize("Albums")
 
     tableView?.backgroundView = activityIndicatorView
 
@@ -25,9 +25,6 @@ class GenresTableViewController: MuzArbuzBaseTableViewController {
     }
   }
 
-//title=unicode(L('All Genres'))
-//title=unicode(L('Favorite Genres'))
-
   override open func navigate(from view: UITableViewCell) {
     performSegue(withIdentifier: MediaItemsController.SegueIdentifier, sender: view)
   }
@@ -35,19 +32,19 @@ class GenresTableViewController: MuzArbuzBaseTableViewController {
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     if let identifier = segue.identifier {
       switch identifier {
-        case MediaItemsController.SegueIdentifier:
-          if let destination = segue.destination.getActionController() as? MediaItemsController,
-             let view = sender as? MediaNameTableCell {
+      case MediaItemsController.SegueIdentifier:
+        if let destination = segue.destination.getActionController() as? MediaItemsController,
+           let view = sender as? MediaNameTableCell {
 
-            let adapter = MuzArbuzServiceAdapter(mobile: true)
+          let adapter = MuzArbuzServiceAdapter(mobile: true)
 
-            adapter.params["requestType"] = "Genre Books"
-            adapter.params["selectedItem"] = getItem(for: view)
+          adapter.params["requestType"] = "Genre Books"
+          adapter.params["selectedItem"] = getItem(for: view)
 
-            destination.adapter = adapter
-          }
+          destination.adapter = adapter
+        }
 
-        default: break
+      default: break
       }
     }
   }
