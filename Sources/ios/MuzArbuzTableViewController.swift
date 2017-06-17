@@ -34,7 +34,7 @@ open class MuzArbuzTableViewController: MuzArbuzBaseTableViewController {
 
     switch mediaItem.name! {
       case "Albums":
-        performSegue(withIdentifier: "Albums", sender: view)
+        performSegue(withIdentifier: "Albums Menu", sender: view)
 
       case "Artists":
         performSegue(withIdentifier: "Artists", sender: view)
@@ -59,14 +59,14 @@ open class MuzArbuzTableViewController: MuzArbuzBaseTableViewController {
   override open func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     if let identifier = segue.identifier {
       switch identifier {
-        case AlbumsTableViewController.SegueIdentifier:
-          if let destination = segue.destination.getActionController() as? AlbumsTableViewController {
+        case AlbumsMenuTableViewController.SegueIdentifier:
+          if let destination = segue.destination.getActionController() as? AlbumsMenuTableViewController {
             let adapter = MuzArbuzServiceAdapter(mobile: true)
             adapter.pageLoader.enablePagination()
             adapter.pageLoader.pageSize = 20
             adapter.pageLoader.rowSize = 1
 
-            adapter.params["requestType"] = "Albums"
+            adapter.params["requestType"] = "Albums Menu"
             destination.adapter = adapter
           }
 

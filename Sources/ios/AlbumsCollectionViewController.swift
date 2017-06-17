@@ -14,7 +14,7 @@ class AlbumsCollectionViewController: MuzArbuzBaseCollectionViewController {
 
     title = localizer.localize("Albums")
 
-    tableView?.backgroundView = activityIndicatorView
+    //tableView?.backgroundView = activityIndicatorView
 
     adapter.pageLoader.spinner = PlainSpinner(activityIndicatorView)
 
@@ -25,21 +25,21 @@ class AlbumsCollectionViewController: MuzArbuzBaseCollectionViewController {
     }
   }
 
-  override open func navigate(from view: UITableViewCell) {
-    performSegue(withIdentifier: MediaItemsController.SegueIdentifier, sender: view)
-  }
+//  override open func navigate(from view: UITableViewCell) {
+//    performSegue(withIdentifier: MediaItemsController.SegueIdentifier, sender: view)
+//  }
 
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     if let identifier = segue.identifier {
       switch identifier {
       case MediaItemsController.SegueIdentifier:
         if let destination = segue.destination.getActionController() as? MediaItemsController,
-           let view = sender as? MediaNameTableCell {
+           let view = sender as? MediaItemTableCell {
 
           let adapter = MuzArbuzServiceAdapter(mobile: true)
 
           adapter.params["requestType"] = "Genre Books"
-          adapter.params["selectedItem"] = getItem(for: view)
+          //adapter.params["selectedItem"] = getItem(for: view)
 
           destination.adapter = adapter
         }

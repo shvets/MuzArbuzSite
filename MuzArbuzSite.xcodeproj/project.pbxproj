@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2DBA145ED2990AE67F7D8C5E /* AlbumsMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBA1A1A331C2746C207CCF5 /* AlbumsMenuTableViewController.swift */; };
+		2DBA1869AFF487CB4E0462C3 /* MuzArbuzBaseCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBA12D480F93CA4CC0F1C77 /* MuzArbuzBaseCollectionViewController.swift */; };
+		2DBA196EF261E1DC0B82F23F /* CollectionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBA1B018E771601C829521B /* CollectionsTableViewController.swift */; };
+		2DBA1B7FB220957023C9C36C /* ArtistsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBA1E2513CE920EC39E0FD0 /* ArtistsTableViewController.swift */; };
+		2DBA1F332F84003021E0010C /* AlbumsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBA1E1A74958A2A5D041966 /* AlbumsCollectionViewController.swift */; };
 		3BEF1E4A01EFEC93B65F4FE8 /* Pods_MuzArbuzSite_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA4FC038A15B3F0A7727CBA2 /* Pods_MuzArbuzSite_tvOS.framework */; };
 		9BC778D862EC62A4B3C66CD3 /* Pods_MuzArbuzSite_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31EB3610A3F09F642A5F12DF /* Pods_MuzArbuzSite_iOS.framework */; };
 		B1F6A393859D89947028C0B7 /* Pods_MuzArbuzSite_tvOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE91A1DDB4B00D3FDCDAD39F /* Pods_MuzArbuzSite_tvOSTests.framework */; };
@@ -54,6 +59,11 @@
 		102EEA73C38990327211282A /* Pods_MuzArbuzSite_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MuzArbuzSite_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		139FEB1E21F68599B64A8EAE /* Pods-MuzArbuzSite_tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MuzArbuzSite_tvOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MuzArbuzSite_tvOSTests/Pods-MuzArbuzSite_tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2A47FF714DA147ACA0352AC0 /* Pods-MuzArbuzSite_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MuzArbuzSite_iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-MuzArbuzSite_iOS/Pods-MuzArbuzSite_iOS.release.xcconfig"; sourceTree = "<group>"; };
+		2DBA12D480F93CA4CC0F1C77 /* MuzArbuzBaseCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MuzArbuzBaseCollectionViewController.swift; path = Sources/ios/MuzArbuzBaseCollectionViewController.swift; sourceTree = "<group>"; };
+		2DBA1A1A331C2746C207CCF5 /* AlbumsMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlbumsMenuTableViewController.swift; path = Sources/ios/AlbumsMenuTableViewController.swift; sourceTree = "<group>"; };
+		2DBA1B018E771601C829521B /* CollectionsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectionsTableViewController.swift; path = Sources/ios/CollectionsTableViewController.swift; sourceTree = "<group>"; };
+		2DBA1E1A74958A2A5D041966 /* AlbumsCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlbumsCollectionViewController.swift; path = Sources/ios/AlbumsCollectionViewController.swift; sourceTree = "<group>"; };
+		2DBA1E2513CE920EC39E0FD0 /* ArtistsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArtistsTableViewController.swift; path = Sources/ios/ArtistsTableViewController.swift; sourceTree = "<group>"; };
 		31EB3610A3F09F642A5F12DF /* Pods_MuzArbuzSite_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MuzArbuzSite_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		45D8E670D0D17362EC7AE411 /* Pods-MuzArbuzSite_tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MuzArbuzSite_tvOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MuzArbuzSite_tvOS/Pods-MuzArbuzSite_tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		4C64FEC7DD5BFDDA028EA717 /* Pods-MuzArbuzSite_iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MuzArbuzSite_iOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MuzArbuzSite_iOSTests/Pods-MuzArbuzSite_iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -169,6 +179,11 @@
 				FAD7BC741EECC797004F63B9 /* Products */,
 				2B71D7A6ACEDAD5BCC2E4060 /* Pods */,
 				76D14B14ABA9F2C9508FF0DB /* Frameworks */,
+				2DBA1E1A74958A2A5D041966 /* AlbumsCollectionViewController.swift */,
+				2DBA1A1A331C2746C207CCF5 /* AlbumsMenuTableViewController.swift */,
+				2DBA1E2513CE920EC39E0FD0 /* ArtistsTableViewController.swift */,
+				2DBA1B018E771601C829521B /* CollectionsTableViewController.swift */,
+				2DBA12D480F93CA4CC0F1C77 /* MuzArbuzBaseCollectionViewController.swift */,
 			);
 			sourceTree = "<group>";
 		};
@@ -598,6 +613,11 @@
 				FAD7BCBA1EECC835004F63B9 /* MuzArbuzMediaItem.swift in Sources */,
 				FAD7BCB91EECC835004F63B9 /* MuzArbuzDataSource.swift in Sources */,
 				FAD7BCB81EECC835004F63B9 /* SettingsTableController.swift in Sources */,
+				2DBA1F332F84003021E0010C /* AlbumsCollectionViewController.swift in Sources */,
+				2DBA145ED2990AE67F7D8C5E /* AlbumsMenuTableViewController.swift in Sources */,
+				2DBA1B7FB220957023C9C36C /* ArtistsTableViewController.swift in Sources */,
+				2DBA196EF261E1DC0B82F23F /* CollectionsTableViewController.swift in Sources */,
+				2DBA1869AFF487CB4E0462C3 /* MuzArbuzBaseCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
