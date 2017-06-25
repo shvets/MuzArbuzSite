@@ -14,7 +14,7 @@ class AlbumsCollectionViewController: MuzArbuzBaseCollectionViewController {
 
     title = localizer.localize("Albums")
 
-    //tableView?.backgroundView = activityIndicatorView
+    collectionView?.backgroundView = activityIndicatorView
 
     adapter.pageLoader.spinner = PlainSpinner(activityIndicatorView)
 

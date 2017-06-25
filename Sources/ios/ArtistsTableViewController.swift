@@ -44,7 +44,7 @@ class ArtistsTableViewController: MuzArbuzBaseTableViewController {
 
           let adapter = MuzArbuzServiceAdapter(mobile: true)
 
-          adapter.params["requestType"] = "Genre Books"
+          adapter.params["requestType"] = "Artists"
           adapter.params["selectedItem"] = getItem(for: view)
 
           destination.adapter = adapter

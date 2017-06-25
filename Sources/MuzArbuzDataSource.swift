@@ -12,11 +12,17 @@ class MuzArbuzDataSource: DataSource {
     let selectedItem = params["selectedItem"] as? MediaItem
 
     var request = params["requestType"] as! String
-    var pageSize = params["pageSize"] as! Int
+    let pageSize = params["pageSize"] as! Int
     let currentPage = params["currentPage"] as! Int
 
-    if selectedItem?.type == "book" {
-      request = "Tracks"
+    if selectedItem?.type == "album" {
+      request = "Album Tracks"
+    }
+    else if selectedItem?.type == "artist" {
+      request = "Artist Tracks"
+    }
+    else if selectedItem?.type == "collection" {
+      request = "Collection Tracks"
     }
 
     switch request {
@@ -33,49 +39,55 @@ class MuzArbuzDataSource: DataSource {
 //        }
 
       case "Albums":
-        var params = ["year__gte": "1960", "year__lte": "1980"]
+        //var params = ["year__gte": "1960", "year__lte": "1980"]
 
-        result = try service.getAlbums(params: params, pageSize: pageSize, page: currentPage)["items"] as! [Any]
+        result = try service.getAlbums(params: [:], pageSize: pageSize, page: currentPage)["items"] as! [Any]
 
       case "Artists":
-        print("Artists")
-
-//        var params = ["year__gte": "1960", "year__lte": "1980"]
-//        result = try service.getArtists(params: params, pageSize: pageSize, page: currentPage)["items"]
+        result = try service.getArtists(params: [:], pageSize: pageSize, page: currentPage)["items"] as! [Any]
 
       case "Collections":
-        print("Collections")
+        result = try service.getCollections(params: [:], pageSize: pageSize, page: currentPage)["items"] as! [Any]
 
       case "Genres":
-        print("Genres")
-//        result = try service.getGenres(page: currentPage)["movies"] as! [Any]
+        result = try service.getGenres(params: [:], pageSize: pageSize, page: currentPage)["items"] as! [Any]
 
+      case "Album Tracks":
+        if let album = selectedItem?.id {
+          result = try service.getTracks(params: ["album": album], pageSize: pageSize, page: currentPage)["items"] as! [Any]
+        }
+
+      case "Artist Tracks":
+        if let artist = selectedItem?.id {
+          result = try service.getTracks(params: ["artists": artist], pageSize: pageSize, page: currentPage)["items"] as! [Any]
+        }
+
+      case "Collection Tracks":
+        if let collection = selectedItem?.id {
+          result = try service.getTracks(params: ["collection__id": collection], pageSize: pageSize, page: currentPage)["items"] as! [Any]
+        }
 
       case "Search":
-        print("Search")
-//        if let query = params["query"] as? String {
-//          if !query.isEmpty {
-//            result = try service.search(query, page: currentPage)["movies"] as! [Any]
-//          }
-//          else {
-//            result = []
-//          }
-//        }
+        if let query = params["query"] as? String {
+          if !query.isEmpty {
+            let r = try service.search(query, page: currentPage)
+
+            result = (r["album"] as! [String: Any])["items"] as! [Any]
+          }
+        }
 
       default:
         result = []
     }
 
-    return convertToMediaItems(result)
+    let convert = params["convert"] as? Bool ?? true
 
-//    let convert = params["convert"] as? Bool ?? true
-//
-//    if convert {
-//      return convertToMediaItems(result)
-//    }
-//    else {
-//      return result
-//    }
+    if convert {
+      return convertToMediaItems(result)
+    }
+    else {
+      return result
+    }
   }
 
   func convertToMediaItems(_ items: [Any]) -> [MediaItem] {

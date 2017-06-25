@@ -34,16 +34,16 @@ open class MuzArbuzTableViewController: MuzArbuzBaseTableViewController {
 
     switch mediaItem.name! {
       case "Albums":
-        performSegue(withIdentifier: "Albums Menu", sender: view)
+        performSegue(withIdentifier: "Media Items", sender: view)
 
       case "Artists":
-        performSegue(withIdentifier: "Artists", sender: view)
+        performSegue(withIdentifier: "Media Items", sender: view)
 
       case "Collections":
-        performSegue(withIdentifier: "Collections", sender: view)
+        performSegue(withIdentifier: "Media Items", sender: view)
 
       case "Genres":
-        performSegue(withIdentifier: "Genres", sender: view)
+        performSegue(withIdentifier: "Media Items", sender: view)
 
       case "Settings":
         performSegue(withIdentifier: "Settings", sender: view)
@@ -59,60 +59,21 @@ open class MuzArbuzTableViewController: MuzArbuzBaseTableViewController {
   override open func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     if let identifier = segue.identifier {
       switch identifier {
-        case AlbumsMenuTableViewController.SegueIdentifier:
-          if let destination = segue.destination.getActionController() as? AlbumsMenuTableViewController {
-            let adapter = MuzArbuzServiceAdapter(mobile: true)
-            adapter.pageLoader.enablePagination()
-            adapter.pageLoader.pageSize = 20
-            adapter.pageLoader.rowSize = 1
-
-            adapter.params["requestType"] = "Albums Menu"
-            destination.adapter = adapter
-          }
-
-        case ArtistsTableViewController.SegueIdentifier:
-          if let destination = segue.destination.getActionController() as? ArtistsTableViewController {
-            let adapter = MuzArbuzServiceAdapter(mobile: true)
-            adapter.pageLoader.enablePagination()
-            adapter.pageLoader.pageSize = 20
-            adapter.pageLoader.rowSize = 1
-
-            adapter.params["requestType"] = "Artists"
-            destination.adapter = adapter
-          }
-
-        case CollectionsTableViewController.SegueIdentifier:
-          if let destination = segue.destination.getActionController() as? CollectionsTableViewController {
-            let adapter = MuzArbuzServiceAdapter(mobile: true)
-            adapter.pageLoader.enablePagination()
-            adapter.pageLoader.pageSize = 20
-            adapter.pageLoader.rowSize = 1
-
-            adapter.params["requestType"] = "Collections"
-            destination.adapter = adapter
-          }
-
-        case GenresTableViewController.SegueIdentifier:
-          if let destination = segue.destination.getActionController() as? GenresTableViewController {
-            let adapter = MuzArbuzServiceAdapter(mobile: true)
-            adapter.pageLoader.enablePagination()
-            adapter.pageLoader.pageSize = 20
-            adapter.pageLoader.rowSize = 1
-
-            adapter.params["requestType"] = "Genres"
-            destination.adapter = adapter
-          }
-
         case MediaItemsController.SegueIdentifier:
           if let destination = segue.destination.getActionController() as? MediaItemsController,
              let view = sender as? MediaNameTableCell {
 
-            let mediaItem = getItem(for: view)
-
             let adapter = MuzArbuzServiceAdapter(mobile: true)
 
-            adapter.params["requestType"] = mediaItem.name
+            adapter.pageLoader.enablePagination()
+            adapter.pageLoader.pageSize = 20
+            adapter.pageLoader.rowSize = 1
+
+            let mediaItem = getItem(for: view)
+
+            adapter.params["requestType"] =  mediaItem.name!
             adapter.params["parentName"] = localizer.localize(mediaItem.name!)
+            adapter.params["selectedItem"] = getItem(for: view)
 
             destination.adapter = adapter
           }

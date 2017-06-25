@@ -2,7 +2,7 @@ import UIKit
 import TVSetKit
 
 class AlbumsMenuTableViewController: MuzArbuzBaseTableViewController {
-  static let SegueIdentifier = "Albums"
+  static let SegueIdentifier = "Albums Menu"
 
   override open var CellIdentifier: String { return "AlbumMenuTableCell" }
   override open var BundleId: String { return MuzArbuzServiceAdapter.BundleId }
@@ -16,36 +16,30 @@ class AlbumsMenuTableViewController: MuzArbuzBaseTableViewController {
 
     tableView?.backgroundView = activityIndicatorView
 
-    adapter.pageLoader.spinner = PlainSpinner(activityIndicatorView)
-
     items.append(MediaItem(name: "All Albums"))
-    items.append(MediaItem(name: "Favorite Albums"))
-    items.append(MediaItem(name: "Favorite Double Albums"))
+//    items.append(MediaItem(name: "Favorite Albums"))
+//    items.append(MediaItem(name: "Favorite Double Albums"))
     items.append(MediaItem(name: "Albums Search"))
   }
 
   override open func navigate(from view: UITableViewCell) {
-    performSegue(withIdentifier: MediaItemsController.SegueIdentifier, sender: view)
+    let mediaItem = getItem(for: view)
+
+    switch mediaItem.name! {
+    case "All Albums":
+      performSegue(withIdentifier: MediaItemsController.SegueIdentifier, sender: view)
+
+    default:
+      break
+    }
   }
 
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     if let identifier = segue.identifier {
       switch identifier {
-      case "All Albums":
-        if let destination = segue.destination.getActionController() as? AlbumsCollectionViewController,
-           let view = sender as? MediaItemTableCell {
-
-          let adapter = MuzArbuzServiceAdapter(mobile: true)
-
-          adapter.params["requestType"] = "Albums"
-          adapter.params["selectedItem"] = getItem(for: view)
-
-          destination.adapter = adapter
-        }
-
       case MediaItemsController.SegueIdentifier:
         if let destination = segue.destination.getActionController() as? MediaItemsController,
-           let view = sender as? MediaNameTableCell {
+           let view = sender as? MediaItemTableCell {
 
           let adapter = MuzArbuzServiceAdapter(mobile: true)
 
