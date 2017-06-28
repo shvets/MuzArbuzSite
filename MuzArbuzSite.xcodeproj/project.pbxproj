@@ -96,7 +96,7 @@
 		FAD7BCB01EECC835004F63B9 /* MuzArbuzService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MuzArbuzService.swift; sourceTree = "<group>"; };
 		FAD7BCB11EECC835004F63B9 /* MuzArbuzServiceAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MuzArbuzServiceAdapter.swift; sourceTree = "<group>"; };
 		FAD7BCB21EECC835004F63B9 /* MuzArbuzSite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MuzArbuzSite.swift; sourceTree = "<group>"; };
-		FAD7BCBE1EECC8DD004F63B9 /* MuzArbuzSite.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MuzArbuzSite.podspec; sourceTree = "<group>"; };
+		FAD7BCBE1EECC8DD004F63B9 /* MuzArbuzSite.podspec */ = {isa = PBXFileReference; fileEncoding = 1; lastKnownFileType = text; path = MuzArbuzSite.podspec; sourceTree = "<group>"; };
 		FAD7BCBF1EECC8DD004F63B9 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		FCBCE03907B86B02A89CE976 /* Pods-MuzArbuzSite_tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MuzArbuzSite_tvOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MuzArbuzSite_tvOSTests/Pods-MuzArbuzSite_tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		FE91A1DDB4B00D3FDCDAD39F /* Pods_MuzArbuzSite_tvOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MuzArbuzSite_tvOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
