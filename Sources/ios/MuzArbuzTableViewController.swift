@@ -37,13 +37,13 @@ open class MuzArbuzTableViewController: MuzArbuzBaseTableViewController {
         performSegue(withIdentifier: "Media Items", sender: view)
 
       case "Artists":
-        performSegue(withIdentifier: "Media Items", sender: view)
+        performSegue(withIdentifier: "Artists Letters", sender: view)
 
       case "Collections":
         performSegue(withIdentifier: "Media Items", sender: view)
 
       case "Genres":
-        performSegue(withIdentifier: "Media Items", sender: view)
+        performSegue(withIdentifier: "Genres", sender: view)
 
       case "Settings":
         performSegue(withIdentifier: "Settings", sender: view)
@@ -59,6 +59,22 @@ open class MuzArbuzTableViewController: MuzArbuzBaseTableViewController {
   override open func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     if let identifier = segue.identifier {
       switch identifier {
+        case ArtistsLettersTableViewController.SegueIdentifier:
+          if let destination = segue.destination.getActionController() as? ArtistsLettersTableViewController {
+            let adapter = MuzArbuzServiceAdapter(mobile: true)
+
+            adapter.params["requestType"] = "Artists Letters"
+            destination.adapter = adapter
+          }
+
+        case GenresTableViewController.SegueIdentifier:
+          if let destination = segue.destination.getActionController() as? GenresTableViewController {
+            let adapter = MuzArbuzServiceAdapter(mobile: true)
+
+            adapter.params["requestType"] = "Genres"
+            destination.adapter = adapter
+          }
+
         case MediaItemsController.SegueIdentifier:
           if let destination = segue.destination.getActionController() as? MediaItemsController,
              let view = sender as? MediaNameTableCell {
@@ -71,8 +87,11 @@ open class MuzArbuzTableViewController: MuzArbuzBaseTableViewController {
 
             let mediaItem = getItem(for: view)
 
-            adapter.params["requestType"] =  mediaItem.name!
-            adapter.params["parentName"] = localizer.localize(mediaItem.name!)
+            if let name = mediaItem.name {
+              adapter.params["requestType"] =  name
+              adapter.params["parentName"] = localizer.localize(name)
+            }
+
             adapter.params["selectedItem"] = getItem(for: view)
 
             destination.adapter = adapter

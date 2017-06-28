@@ -20,15 +20,7 @@ class MuzArbuzMediaItem: MediaItem {
       }
     }
 
-    print(self.thumb)
-
-//    self.items = []
-//
-//    let items = data["items"].arrayValue
-//
-//    for item in items {
-//      self.items.append(item)
-//    }
+//    print(self.thumb)
   }
   
   override func isContainer() -> Bool {

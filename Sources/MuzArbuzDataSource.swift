@@ -15,7 +15,10 @@ class MuzArbuzDataSource: DataSource {
     let pageSize = params["pageSize"] as! Int
     let currentPage = params["currentPage"] as! Int
 
-    if selectedItem?.type == "album" {
+    if selectedItem?.type == "double_album" {
+      request = "Double Album"
+    }
+    else if selectedItem?.type == "album" {
       request = "Album Tracks"
     }
     else if selectedItem?.type == "artist" {
@@ -43,8 +46,25 @@ class MuzArbuzDataSource: DataSource {
 
         result = try service.getAlbums(params: [:], pageSize: pageSize, page: currentPage)["items"] as! [Any]
 
-      case "Artists":
+      case "Albums By Genre":
+        if let genre = params["parentId"] as? String {
+          result = try service.getAlbums(params: ["genre__in": genre], pageSize: pageSize, page: currentPage)["items"] as! [Any]
+        }
+
+      case "Double Album":
+        if let parentId = params["parentId"] as? String {
+          result = try service.getAlbums(params: ["parent__id": parentId], pageSize: pageSize, page: currentPage)["items"] as! [Any]
+        }
+
+      case "All Artists":
         result = try service.getArtists(params: [:], pageSize: pageSize, page: currentPage)["items"] as! [Any]
+
+      case "Artists":
+        if let letter = params["parentName"] as? String {
+          let encodedLetter = letter.addingPercentEncoding(withAllowedCharacters: NSCharacterSet.urlQueryAllowed)!
+          result = try service.getArtistAnnotated(params: ["title__istartswith": encodedLetter.lowercased()],
+            pageSize: pageSize, page: currentPage)["items"] as! [Any]
+        }
 
       case "Collections":
         result = try service.getCollections(params: [:], pageSize: pageSize, page: currentPage)["items"] as! [Any]
@@ -52,19 +72,41 @@ class MuzArbuzDataSource: DataSource {
       case "Genres":
         result = try service.getGenres(params: [:], pageSize: pageSize, page: currentPage)["items"] as! [Any]
 
+      case "Artists Letters":
+        var list = [Any]()
+
+        list.append(["name": "All"])
+        list.append(["name": "By Letter"])
+        list.append(["name": "By Latin Letter"])
+
+        result = list
+
+      case "Artists Letter":
+        if let parentId = params["parentId"] as? String {
+          let letters = parentId == "By Letter" ? MuzArbuzAPI.CyrillicLetters : MuzArbuzAPI.LatinLetters
+
+          var list = [Any]()
+
+          for letter in letters {
+            list.append(["name": letter])
+          }
+
+          result = list
+        }
+
       case "Album Tracks":
         if let album = selectedItem?.id {
-          result = try service.getTracks(params: ["album": album], pageSize: pageSize, page: currentPage)["items"] as! [Any]
+          result = try service.getTracks(params: ["album": album])["items"] as! [Any]
         }
 
       case "Artist Tracks":
         if let artist = selectedItem?.id {
-          result = try service.getTracks(params: ["artists": artist], pageSize: pageSize, page: currentPage)["items"] as! [Any]
+          result = try service.getTracks(params: ["artists": artist])["items"] as! [Any]
         }
 
       case "Collection Tracks":
         if let collection = selectedItem?.id {
-          result = try service.getTracks(params: ["collection__id": collection], pageSize: pageSize, page: currentPage)["items"] as! [Any]
+          result = try service.getTracks(params: ["collection__id": collection])["items"] as! [Any]
         }
 
       case "Search":

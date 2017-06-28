@@ -1,36 +1,30 @@
 import UIKit
+import SwiftyJSON
+import SwiftSoup
+import WebAPI
 import TVSetKit
 
-class GenresTableViewController: MuzArbuzBaseTableViewController {
-  static let SegueIdentifier = "Genres"
+class ArtistsLetterTableViewController: MuzArbuzBaseTableViewController {
+  static let SegueIdentifier = "Artists Letter"
 
-  override open var CellIdentifier: String { return "GenreTableCell" }
+  override open var CellIdentifier: String { return "ArtistLetterTableCell" }
   override open var BundleId: String { return MuzArbuzServiceAdapter.BundleId }
+
+  var letter: String?
 
   override func viewDidLoad() {
     super.viewDidLoad()
 
     self.clearsSelectionOnViewWillAppear = false
 
-    title = localizer.localize("Genres")
-
-    tableView?.backgroundView = activityIndicatorView
-
-    adapter.pageLoader.spinner = PlainSpinner(activityIndicatorView)
-
-    loadInitialData { result in
-      for item in result {
-        item.name = self.localizer.localize(item.name!)
-      }
-    }
+    loadInitialData()
   }
-
-//title=unicode(L('All Genres'))
-//title=unicode(L('Favorite Genres'))
 
   override open func navigate(from view: UITableViewCell) {
     performSegue(withIdentifier: MediaItemsController.SegueIdentifier, sender: view)
   }
+
+  // MARK: - Navigation
 
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     if let identifier = segue.identifier {
@@ -41,10 +35,14 @@ class GenresTableViewController: MuzArbuzBaseTableViewController {
 
             let adapter = MuzArbuzServiceAdapter(mobile: true)
 
+            adapter.pageLoader.enablePagination()
+            adapter.pageLoader.pageSize = 20
+            adapter.pageLoader.rowSize = 1
+
             let mediaItem = getItem(for: view)
 
-            adapter.params["requestType"] = "Albums By Genre"
-            adapter.params["parentId"] = mediaItem.id
+            adapter.params["requestType"] =  "Artists"
+            adapter.params["parentName"] = localizer.localize(mediaItem.name!)
             adapter.params["selectedItem"] = getItem(for: view)
 
             destination.adapter = adapter
