@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2DBA10DF624B8E7DCFAD97F7 /* ArtistsMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBA11E163259CBB788C30F0 /* ArtistsMenuTableViewController.swift */; };
 		2DBA18D17F6669D5E61ADFD2 /* ArtistsLetterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBA17F5446B8E40A2602257 /* ArtistsLetterTableViewController.swift */; };
 		3BEF1E4A01EFEC93B65F4FE8 /* Pods_MuzArbuzSite_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA4FC038A15B3F0A7727CBA2 /* Pods_MuzArbuzSite_tvOS.framework */; };
 		9BC778D862EC62A4B3C66CD3 /* Pods_MuzArbuzSite_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31EB3610A3F09F642A5F12DF /* Pods_MuzArbuzSite_iOS.framework */; };
@@ -54,6 +55,7 @@
 		102EEA73C38990327211282A /* Pods_MuzArbuzSite_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MuzArbuzSite_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		139FEB1E21F68599B64A8EAE /* Pods-MuzArbuzSite_tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MuzArbuzSite_tvOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MuzArbuzSite_tvOSTests/Pods-MuzArbuzSite_tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2A47FF714DA147ACA0352AC0 /* Pods-MuzArbuzSite_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MuzArbuzSite_iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-MuzArbuzSite_iOS/Pods-MuzArbuzSite_iOS.release.xcconfig"; sourceTree = "<group>"; };
+		2DBA11E163259CBB788C30F0 /* ArtistsMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArtistsMenuTableViewController.swift; path = Sources/ios/ArtistsMenuTableViewController.swift; sourceTree = "<group>"; };
 		2DBA17F5446B8E40A2602257 /* ArtistsLetterTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArtistsLetterTableViewController.swift; path = Sources/ios/ArtistsLetterTableViewController.swift; sourceTree = "<group>"; };
 		31EB3610A3F09F642A5F12DF /* Pods_MuzArbuzSite_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MuzArbuzSite_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		45D8E670D0D17362EC7AE411 /* Pods-MuzArbuzSite_tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MuzArbuzSite_tvOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MuzArbuzSite_tvOS/Pods-MuzArbuzSite_tvOS.debug.xcconfig"; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 				2B71D7A6ACEDAD5BCC2E4060 /* Pods */,
 				76D14B14ABA9F2C9508FF0DB /* Frameworks */,
 				2DBA17F5446B8E40A2602257 /* ArtistsLetterTableViewController.swift */,
+				2DBA11E163259CBB788C30F0 /* ArtistsMenuTableViewController.swift */,
 			);
 			sourceTree = "<group>";
 		};
@@ -598,6 +601,7 @@
 				FAD7BCB91EECC835004F63B9 /* MuzArbuzDataSource.swift in Sources */,
 				FAD7BCB81EECC835004F63B9 /* SettingsTableController.swift in Sources */,
 				2DBA18D17F6669D5E61ADFD2 /* ArtistsLetterTableViewController.swift in Sources */,
+				2DBA10DF624B8E7DCFAD97F7 /* ArtistsMenuTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
