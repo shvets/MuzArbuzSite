@@ -4,10 +4,10 @@ import SwiftSoup
 import WebAPI
 import TVSetKit
 
-class ArtistsLettersTableViewController: MuzArbuzBaseTableViewController {
-  static let SegueIdentifier = "Artists Letters"
+class ArtistsMenuTableViewController: MuzArbuzBaseTableViewController {
+  static let SegueIdentifier = "Artists Menu"
 
-  override open var CellIdentifier: String { return "ArtistsLettersTableCell" }
+  override open var CellIdentifier: String { return "ArtistsMenuTableCell" }
   override open var BundleId: String { return MuzArbuzServiceAdapter.BundleId }
 
   override func viewDidLoad() {
@@ -17,7 +17,13 @@ class ArtistsLettersTableViewController: MuzArbuzBaseTableViewController {
 
     title = localizer.localize("Artists")
 
-    loadInitialData()
+    loadData()
+  }
+
+  func loadData() {
+    items.append(MediaItem(name: "All"))
+    items.append(MediaItem(name: "By Letter"))
+    items.append(MediaItem(name: "By Latin Letter"))
   }
 
   override open func navigate(from view: UITableViewCell) {

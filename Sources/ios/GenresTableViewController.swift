@@ -25,9 +25,6 @@ class GenresTableViewController: MuzArbuzBaseTableViewController {
     }
   }
 
-//title=unicode(L('All Genres'))
-//title=unicode(L('Favorite Genres'))
-
   override open func navigate(from view: UITableViewCell) {
     performSegue(withIdentifier: MediaItemsController.SegueIdentifier, sender: view)
   }
@@ -45,6 +42,7 @@ class GenresTableViewController: MuzArbuzBaseTableViewController {
 
             adapter.params["requestType"] = "Albums By Genre"
             adapter.params["parentId"] = mediaItem.id
+            adapter.params["parentName"] = mediaItem.id
             adapter.params["selectedItem"] = getItem(for: view)
 
             destination.adapter = adapter

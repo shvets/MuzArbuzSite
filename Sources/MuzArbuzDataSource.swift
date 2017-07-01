@@ -29,17 +29,17 @@ class MuzArbuzDataSource: DataSource {
     }
 
     switch request {
-//      case "Bookmarks":
-//        if let bookmarks = params["bookmarks"]  as? Bookmarks {
-//          bookmarks.load()
-//          result = bookmarks.getBookmarks(pageSize: 60, page: currentPage)
-//        }
-//
-//      case "History":
-//        if let history = params["history"] as? History {
-//          history.load()
-//          result = history.getHistoryItems(pageSize: 60, page: currentPage)
-//        }
+      case "Bookmarks":
+        if let bookmarks = params["bookmarks"]  as? Bookmarks {
+          bookmarks.load()
+          result = bookmarks.getBookmarks(pageSize: 60, page: currentPage)
+        }
+
+      case "History":
+        if let history = params["history"] as? History {
+          history.load()
+          result = history.getHistoryItems(pageSize: 60, page: currentPage)
+        }
 
       case "Albums":
         //var params = ["year__gte": "1960", "year__lte": "1980"]
@@ -72,14 +72,14 @@ class MuzArbuzDataSource: DataSource {
       case "Genres":
         result = try service.getGenres(params: [:], pageSize: pageSize, page: currentPage)["items"] as! [Any]
 
-      case "Artists Letters":
-        var list = [Any]()
-
-        list.append(["name": "All"])
-        list.append(["name": "By Letter"])
-        list.append(["name": "By Latin Letter"])
-
-        result = list
+//      case "Artists Letters":
+//        var list = [Any]()
+//
+//        list.append(["name": "All"])
+//        list.append(["name": "By Letter"])
+//        list.append(["name": "By Latin Letter"])
+//
+//        result = list
 
       case "Artists Letter":
         if let parentId = params["parentId"] as? String {
