@@ -32,7 +32,7 @@ class ArtistsMenuTableViewController: MuzArbuzBaseTableViewController {
     let selection = mediaItem.name
 
     if selection == "All" {
-      performSegue(withIdentifier: MediaItemsController.SegueIdentifier, sender: view)
+      performSegue(withIdentifier: ArtistItemsController.SegueIdentifier, sender: view)
     }
     else {
       performSegue(withIdentifier: ArtistsLetterTableViewController.SegueIdentifier, sender: view)
@@ -56,8 +56,8 @@ class ArtistsMenuTableViewController: MuzArbuzBaseTableViewController {
             destination.adapter = adapter
           }
 
-        case MediaItemsController.SegueIdentifier:
-          if let destination = segue.destination.getActionController() as? MediaItemsController,
+        case ArtistItemsController.SegueIdentifier:
+          if let destination = segue.destination.getActionController() as? ArtistItemsController,
              let view = sender as? MediaNameTableCell {
 
             let adapter = MuzArbuzServiceAdapter(mobile: true)
@@ -72,7 +72,7 @@ class ArtistsMenuTableViewController: MuzArbuzBaseTableViewController {
             adapter.params["parentName"] = localizer.localize(mediaItem.name!)
             adapter.params["selectedItem"] = getItem(for: view)
 
-            destination.adapter = adapter
+            //destination.adapter = adapter
           }
 
         default: break

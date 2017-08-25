@@ -72,15 +72,6 @@ class MuzArbuzDataSource: DataSource {
       case "Genres":
         result = try service.getGenres(params: [:], pageSize: pageSize, page: currentPage)["items"] as! [Any]
 
-//      case "Artists Letters":
-//        var list = [Any]()
-//
-//        list.append(["name": "All"])
-//        list.append(["name": "By Letter"])
-//        list.append(["name": "By Latin Letter"])
-//
-//        result = list
-
       case "Artists Letter":
         if let parentId = params["parentId"] as? String {
           let letters = parentId == "By Letter" ? MuzArbuzAPI.CyrillicLetters : MuzArbuzAPI.LatinLetters
@@ -114,7 +105,62 @@ class MuzArbuzDataSource: DataSource {
           if !query.isEmpty {
             let r = try service.search(query, page: currentPage)
 
-            result = (r["album"] as! [String: Any])["items"] as! [Any]
+            //result = (r["album"] as! [String: Any])["items"] as! [Any]
+//            result = []
+//            result.append((r["album"] as! [String: Any])["items"])
+//            result.append((r["collection"] as! [String: Any])["items"])
+//            result.append((r["artist_annotated"] as! [String: Any])["items"])
+//            result.append((r["audio_track"] as! [String: Any])["items"])
+
+            result = [r]
+          }
+        }
+
+      case "Search Albums":
+        if let query = params["query"] as? String {
+          if !query.isEmpty {
+            var newParams = [String: String]()
+            newParams["q"] = query.addingPercentEncoding(withAllowedCharacters: NSCharacterSet.urlQueryAllowed)!
+
+            let searchResult = try service.searchAlbum(newParams, pageSize: pageSize, page: currentPage)
+
+            result = searchResult["items"] as! [Any]
+          }
+        }
+
+      case "Search Collection":
+        if let query = params["query"] as? String {
+          if !query.isEmpty {
+            var newParams = [String: String]()
+            newParams["q"] = query.addingPercentEncoding(withAllowedCharacters: NSCharacterSet.urlQueryAllowed)!
+
+            let searchResult = try service.searchCollection(newParams, pageSize: pageSize, page: currentPage)
+
+            result = searchResult["items"] as! [Any]
+          }
+        }
+
+      case "Search Artist Annotated":
+        if let query = params["query"] as? String {
+          if !query.isEmpty {
+            var newParams = [String: String]()
+            newParams["q"] = query.addingPercentEncoding(withAllowedCharacters: NSCharacterSet.urlQueryAllowed)!
+
+            let searchResult = try service.searchArtistAnnotated(newParams, pageSize: pageSize, page: currentPage)
+
+            result = searchResult["items"] as! [Any]
+          }
+        }
+
+      case "Search Audio Track":
+        if let query = params["query"] as? String {
+          if !query.isEmpty {
+            var newParams = [String: String]()
+            newParams["q"] = query.addingPercentEncoding(withAllowedCharacters: NSCharacterSet.urlQueryAllowed)!
+
+            let searchResult = try service.searchAudioTrack(newParams, pageSize: pageSize, page: currentPage)
+
+            result = searchResult["items"] as! [Any]
           }
         }
 
