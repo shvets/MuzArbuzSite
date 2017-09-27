@@ -10,8 +10,8 @@ class MuzArbuzServiceAdapter: ServiceAdapter {
   override open class var StoryboardId: String { return "MuzArbuz" }
   override open class var BundleId: String { return "com.rubikon.MuzArbuzSite" }
 
-  lazy var bookmarks = Bookmarks(bookmarksFileName)
-  lazy var history = History(historyFileName)
+    lazy var bookmarks = Bookmarks(MuzArbuzServiceAdapter.bookmarksFileName)
+    lazy var history = History(MuzArbuzServiceAdapter.historyFileName)
 
   public init(mobile: Bool=false) {
     super.init(dataSource: MuzArbuzDataSource(), mobile: mobile)

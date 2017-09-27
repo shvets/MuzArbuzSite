@@ -61,7 +61,7 @@ open class SearchTableController: UIViewController, UITextFieldDelegate {
     }
   }
 
-  func textFieldModified(textField: UITextField) {
+    @objc func textFieldModified(textField: UITextField) {
     if isChecked {
       let transcoded = LatToRusConverter().transliterate(query.text ?? "")
 
@@ -78,7 +78,7 @@ open class SearchTableController: UIViewController, UITextFieldDelegate {
     return true
   }
 
-  func search(_ sender: UIButton) {
+    @objc func search(_ sender: UIButton) {
     performSegue(withIdentifier: SearchResultTableViewController.SegueIdentifier, sender: view)
   }
 
