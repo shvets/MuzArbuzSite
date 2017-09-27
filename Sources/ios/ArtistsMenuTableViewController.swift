@@ -57,7 +57,7 @@ class ArtistsMenuTableViewController: MuzArbuzBaseTableViewController {
           }
 
         case ArtistItemsController.SegueIdentifier:
-          if let destination = segue.destination.getActionController() as? ArtistItemsController,
+          if let _ = segue.destination.getActionController() as? ArtistItemsController,
              let view = sender as? MediaNameTableCell {
 
             let adapter = MuzArbuzServiceAdapter(mobile: true)

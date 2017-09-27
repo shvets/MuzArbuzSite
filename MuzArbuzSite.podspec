@@ -26,5 +26,5 @@ Pod::Spec.new do |s|
   s.dependency 'AudioPlayer', '~> 1.0.7'
   s.dependency 'TVSetKit', '~> 1.0.14'
 
-  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '3' }
+  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4' }
 end

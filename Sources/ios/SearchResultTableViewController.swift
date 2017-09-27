@@ -54,7 +54,7 @@ class SearchResultTableViewController: MuzArbuzBaseTableViewController {
 
     title = localizer.localize("Search Result")
 
-    query = adapter.params["query"] as! String
+    query = adapter.params["query"] as? String
 
     loadData()
   }
