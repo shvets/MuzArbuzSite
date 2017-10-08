@@ -60,10 +60,10 @@ class SearchResultTableViewController: MuzArbuzBaseTableViewController {
   }
 
   func loadData() {
-    items.append(MediaItem(name: GroupNames[0].rawValue))
-    items.append(MediaItem(name: GroupNames[1].rawValue))
-    items.append(MediaItem(name: GroupNames[2].rawValue))
-    items.append(MediaItem(name: GroupNames[3].rawValue))
+    items.append(Item(name: GroupNames[0].rawValue))
+    items.append(Item(name: GroupNames[1].rawValue))
+    items.append(Item(name: GroupNames[2].rawValue))
+    items.append(Item(name: GroupNames[3].rawValue))
   }
 
   override open func navigate(from view: UITableViewCell) {

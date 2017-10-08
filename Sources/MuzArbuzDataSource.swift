@@ -8,7 +8,7 @@ class MuzArbuzDataSource: DataSource {
   override open func load(params: Parameters) throws -> [Any] {
     var result: [Any] = []
 
-    let selectedItem = params["selectedItem"] as? MediaItem
+    let selectedItem = params["selectedItem"] as? Item
 
     var request = params["requestType"] as! String
     let pageSize = params["pageSize"] as! Int
@@ -177,8 +177,8 @@ class MuzArbuzDataSource: DataSource {
     }
   }
 
-  func convertToMediaItems(_ items: [Any]) -> [MediaItem] {
-    var newItems = [MediaItem]()
+  func convertToMediaItems(_ items: [Any]) -> [Item] {
+    var newItems = [Item]()
 
     for item in items {
       var jsonItem = item as? JSON

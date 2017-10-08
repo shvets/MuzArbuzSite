@@ -19,14 +19,14 @@ open class MuzArbuzTableViewController: MuzArbuzBaseTableViewController {
   }
 
   func loadData() {
-    items.append(MediaItem(name: "Bookmarks", imageName: "Star"))
-    items.append(MediaItem(name: "History", imageName: "Bookmark"))
-    items.append(MediaItem(name: "Albums", imageName: "Book"))
-    items.append(MediaItem(name: "Artists", imageName: "Mark Twain"))
-    items.append(MediaItem(name: "Collections", imageName: "Microphone"))
-    items.append(MediaItem(name: "Genres", imageName: "Comedy"))
-    items.append(MediaItem(name: "Settings", imageName: "Engineering"))
-    items.append(MediaItem(name: "Search", imageName: "Search"))
+    items.append(MediaName(name: "Bookmarks", imageName: "Star"))
+    items.append(MediaName(name: "History", imageName: "Bookmark"))
+    items.append(MediaName(name: "Albums", imageName: "Book"))
+    items.append(MediaName(name: "Artists", imageName: "Mark Twain"))
+    items.append(MediaName(name: "Collections", imageName: "Microphone"))
+    items.append(MediaName(name: "Genres", imageName: "Comedy"))
+    items.append(MediaName(name: "Settings", imageName: "Engineering"))
+    items.append(MediaName(name: "Search", imageName: "Search"))
   }
 
   override open func navigate(from view: UITableViewCell) {

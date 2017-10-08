@@ -21,9 +21,9 @@ class ArtistsMenuTableViewController: MuzArbuzBaseTableViewController {
   }
 
   func loadData() {
-    items.append(MediaItem(name: "All"))
-    items.append(MediaItem(name: "By Letter"))
-    items.append(MediaItem(name: "By Latin Letter"))
+    items.append(Item(name: "All"))
+    items.append(Item(name: "By Letter"))
+    items.append(Item(name: "By Latin Letter"))
   }
 
   override open func navigate(from view: UITableViewCell) {

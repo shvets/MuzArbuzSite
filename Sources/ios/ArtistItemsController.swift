@@ -190,7 +190,7 @@ open class ArtistItemsController: UICollectionViewController, UICollectionViewDe
 //    }
 //  }
 //
-//  public func getItem(for cell: UICollectionViewCell) -> MediaItem {
+//  public func getItem(for cell: UICollectionViewCell) -> Item {
 //    if let indexPath = collectionView?.indexPath(for: cell) {
 //      let section = indexPath.section
 //
