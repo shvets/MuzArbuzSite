@@ -3,10 +3,19 @@ source 'https://github.com/shvets/Specs.git'
 
 use_frameworks!
 
+def project_dependencies
+  pod 'Runglish', path: '../Runglish'
+  pod 'AudioPlayer', path: '../AudioPlayer'
+  pod 'TVSetKit', path: '../TVSetKit'
+  pod 'WebAPI', path: '../WebAPI'
+end
+
 target 'MuzArbuzSite_iOS' do
   platform :ios, '10.0'
 
   podspec :path => 'MuzArbuzSite.podspec'
+
+  project_dependencies
 
   target 'MuzArbuzSite_iOSTests' do
     inherit! :search_paths
@@ -17,6 +26,8 @@ target 'MuzArbuzSite_tvOS' do
   platform :tvos, '10.10'
 
   podspec :path => 'MuzArbuzSite.podspec'
+
+  project_dependencies
 
   target 'MuzArbuzSite_tvOSTests' do
     inherit! :search_paths
