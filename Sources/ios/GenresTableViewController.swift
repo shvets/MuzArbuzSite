@@ -46,6 +46,7 @@ class GenresTableViewController: MuzArbuzBaseTableViewController {
             adapter.params["selectedItem"] = getItem(for: view)
 
             destination.adapter = adapter
+            destination.configuration = adapter.getConfiguration()
           }
 
         default: break

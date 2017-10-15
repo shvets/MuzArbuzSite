@@ -54,4 +54,18 @@ class MuzArbuzServiceAdapter: ServiceAdapter {
     history.add(item: item)
   }
 
+func getConfiguration() -> Configuration {
+    var conf = Configuration()
+
+    if mobile {
+      conf.pageSize = 12
+      conf.rowSize = 1
+    }
+    else {
+      conf.pageSize = 12
+      conf.rowSize = 6
+    }
+
+    return conf
+  }
 }

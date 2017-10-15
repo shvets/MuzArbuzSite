@@ -112,6 +112,7 @@ class SearchResultTableViewController: MuzArbuzBaseTableViewController {
           adapter.params["selectedItem"] = getItem(for: view)
 
           destination.adapter = adapter
+          destination.configuration = adapter.getConfiguration()
         }
 
       case AudioItemsController.SegueIdentifier:
