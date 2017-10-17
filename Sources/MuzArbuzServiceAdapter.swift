@@ -19,9 +19,6 @@ class MuzArbuzServiceAdapter: ServiceAdapter {
   public init(mobile: Bool=false) {
     super.init(dataSource: MuzArbuzDataSource(), mobile: mobile)
 
-    bookmarks.load()
-    history.load()
-
     bookmarksManager = BookmarksManager(bookmarks)
     historyManager = HistoryManager(history)
 

@@ -30,13 +30,11 @@ class MuzArbuzDataSource: DataSource {
     switch request {
       case "Bookmarks":
         if let bookmarks = params["bookmarks"]  as? Bookmarks {
-          bookmarks.load()
           result = bookmarks.getBookmarks(pageSize: 60, page: currentPage)
         }
 
       case "History":
         if let history = params["history"] as? History {
-          history.load()
           result = history.getHistoryItems(pageSize: 60, page: currentPage)
         }
 
