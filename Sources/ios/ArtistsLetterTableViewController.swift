@@ -41,8 +41,8 @@ class ArtistsLetterTableViewController: MuzArbuzBaseTableViewController {
 
             let mediaItem = getItem(for: view)
 
-            adapter.params["requestType"] =  "Artists"
-            adapter.params["parentName"] = localizer.localize(mediaItem.name!)
+            destination.params["requestType"] =  "Artists"
+            destination.params["parentName"] = localizer.localize(mediaItem.name!)
             adapter.params["selectedItem"] = getItem(for: view)
 
             destination.adapter = adapter

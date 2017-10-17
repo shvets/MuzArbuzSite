@@ -127,8 +127,8 @@ open class ArtistItemsController: UICollectionViewController, UICollectionViewDe
 ////              let mediaItem = getItem(for: view)
 ////
 ////              if let name = mediaItem.name {
-////                adapter.params["requestType"] =  name
-////                adapter.params["parentName"] = localizer.localize(name)
+////                destination.params["requestType"] =  name
+////                destination.params["parentName"] = localizer.localize(name)
 ////              }
 ////
 ////              adapter.params["selectedItem"] = getItem(for: view)
@@ -162,7 +162,7 @@ open class ArtistItemsController: UICollectionViewController, UICollectionViewDe
 //              destination.pageLoader.load = {
 //                var items: [AudioItem] = []
 //
-//                self.adapter.params["requestType"] = "Tracks"
+//                self.destination.params["requestType"] = "Tracks"
 //                self.adapter.params["selectedItem"] = mediaItem
 //                self.adapter.params["convert"] = false
 //

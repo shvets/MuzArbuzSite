@@ -79,7 +79,7 @@ class TracksAndAlbumsController: MuzArbuzBaseCollectionViewController {
 //          let mediaItem = getItem(for: view)
 //
 //          let adapter = MuzArbuzServiceAdapter(mobile: true)
-//          adapter.params["requestType"] = "Artists Letter"
+//          destination.params["requestType"] = "Artists Letter"
 //          adapter.params["parentId"] = mediaItem.name
 //          destination.adapter = adapter
 //        }
@@ -96,8 +96,8 @@ class TracksAndAlbumsController: MuzArbuzBaseCollectionViewController {
 //
 //          let mediaItem = getItem(for: view)
 //
-//          adapter.params["requestType"] =  "All Artists"
-//          adapter.params["parentName"] = localizer.localize(mediaItem.name!)
+//          destination.params["requestType"] =  "All Artists"
+//          destination.params["parentName"] = localizer.localize(mediaItem.name!)
 //          adapter.params["selectedItem"] = getItem(for: view)
 //
 //          destination.adapter = adapter

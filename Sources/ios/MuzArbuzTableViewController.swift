@@ -63,7 +63,7 @@ open class MuzArbuzTableViewController: MuzArbuzBaseTableViewController {
 //          if let destination = segue.destination.getActionController() as? ArtistsMenuTableViewController {
 //            let adapter = MuzArbuzServiceAdapter(mobile: true)
 //
-//            adapter.params["requestType"] = "Artists Letters"
+//            destination.params["requestType"] = "Artists Letters"
 //            destination.adapter = adapter
 //          }
 
@@ -75,7 +75,7 @@ open class MuzArbuzTableViewController: MuzArbuzBaseTableViewController {
             adapter.pageLoader.pageSize = 20
             adapter.pageLoader.rowSize = 1
 
-            adapter.params["requestType"] = "Genres"
+            destination.params["requestType"] = "Genres"
             destination.adapter = adapter
           }
 
@@ -92,8 +92,8 @@ open class MuzArbuzTableViewController: MuzArbuzBaseTableViewController {
             let mediaItem = getItem(for: view)
 
             if let name = mediaItem.name {
-              adapter.params["requestType"] =  name
-              adapter.params["parentName"] = localizer.localize(name)
+              destination.params["requestType"] =  name
+              destination.params["parentName"] = localizer.localize(name)
             }
 
             adapter.params["selectedItem"] = getItem(for: view)
@@ -107,8 +107,8 @@ open class MuzArbuzTableViewController: MuzArbuzBaseTableViewController {
 
             let adapter = MuzArbuzServiceAdapter(mobile: true)
 
-            adapter.params["requestType"] = "Search"
-            adapter.params["parentName"] = localizer.localize("Search Results")
+            destination.params["requestType"] = "Search"
+            destination.params["parentName"] = localizer.localize("Search Results")
 
             destination.adapter = adapter
           }

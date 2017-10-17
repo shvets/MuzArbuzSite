@@ -100,15 +100,15 @@ class SearchResultTableViewController: MuzArbuzBaseTableViewController {
           let selection = mediaItem.name
 
           if selection == "Album" {
-            adapter.params["requestType"] = "Search Albums"
+            destination.params["requestType"] = "Search Albums"
           } else if selection == "Collection" {
-            adapter.params["requestType"] = "Search Collection"
+            destination.params["requestType"] = "Search Collection"
           } else if selection == "Artist Annotated" {
-            adapter.params["requestType"] = "Search Artist Annotated"
+            destination.params["requestType"] = "Search Artist Annotated"
           }
 
           adapter.params["query"] = query!
-          adapter.params["parentName"] = localizer.localize(mediaItem.name!)
+          destination.params["parentName"] = localizer.localize(mediaItem.name!)
           adapter.params["selectedItem"] = getItem(for: view)
 
           destination.adapter = adapter
@@ -128,7 +128,7 @@ class SearchResultTableViewController: MuzArbuzBaseTableViewController {
           destination.pageLoader.load = {
             var items: [AudioItem] = []
 
-            self.adapter.params["requestType"] = "Search Audio Track"
+            self.destination.params["requestType"] = "Search Audio Track"
             self.adapter.params["selectedItem"] = mediaItem
             self.adapter.params["convert"] = false
 
