@@ -52,7 +52,7 @@ class ArtistsMenuTableViewController: MuzArbuzBaseTableViewController {
 
             let adapter = MuzArbuzServiceAdapter(mobile: true)
             destination.params["requestType"] = "Artists Letter"
-            adapter.params["parentId"] = mediaItem.name
+            destination.params["parentId"] = mediaItem.name
             destination.adapter = adapter
           }
 

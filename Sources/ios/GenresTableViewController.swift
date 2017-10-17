@@ -41,7 +41,7 @@ class GenresTableViewController: MuzArbuzBaseTableViewController {
             let mediaItem = getItem(for: view)
 
             destination.params["requestType"] = "Albums By Genre"
-            adapter.params["parentId"] = mediaItem.id
+            destination.params["parentId"] = mediaItem.id
             destination.params["parentName"] = mediaItem.id
             adapter.params["selectedItem"] = getItem(for: view)
 
