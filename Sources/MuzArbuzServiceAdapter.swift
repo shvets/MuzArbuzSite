@@ -69,7 +69,8 @@ class MuzArbuzServiceAdapter: ServiceAdapter {
     conf["bookmarksManager"] = bookmarksManager
     conf["historyManager"] = historyManager
     conf["dataSource"] = dataSource
-    conf["storyboardId"] =  GidOnlineServiceAdapter.StoryboardId
+    conf["storyboardId"] =  MuzArbuzServiceAdapter.StoryboardId
+    conf["bundleId"] = MuzArbuzServiceAdapter.BundleId
     conf["buildLayout"] = buildLayout()
 
     return conf
