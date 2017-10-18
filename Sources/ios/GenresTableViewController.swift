@@ -43,7 +43,7 @@ class GenresTableViewController: MuzArbuzBaseTableViewController {
             destination.params["requestType"] = "Albums By Genre"
             destination.params["parentId"] = mediaItem.id
             destination.params["parentName"] = mediaItem.id
-            adapter.params["selectedItem"] = getItem(for: view)
+            destination.params["selectedItem"] = getItem(for: view)
 
             destination.adapter = adapter
             destination.configuration = adapter.getConfiguration()

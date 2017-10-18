@@ -96,7 +96,7 @@ open class MuzArbuzTableViewController: MuzArbuzBaseTableViewController {
               destination.params["parentName"] = localizer.localize(name)
             }
 
-            adapter.params["selectedItem"] = getItem(for: view)
+            destination.params["selectedItem"] = getItem(for: view)
 
             destination.adapter = adapter
             destination.configuration = adapter.getConfiguration()

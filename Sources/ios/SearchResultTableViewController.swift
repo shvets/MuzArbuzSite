@@ -109,7 +109,7 @@ class SearchResultTableViewController: MuzArbuzBaseTableViewController {
 
           adapter.params["query"] = query!
           destination.params["parentName"] = localizer.localize(mediaItem.name!)
-          adapter.params["selectedItem"] = getItem(for: view)
+          destination.params["selectedItem"] = getItem(for: view)
 
           destination.adapter = adapter
           destination.configuration = adapter.getConfiguration()

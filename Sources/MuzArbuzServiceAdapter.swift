@@ -13,14 +13,11 @@ class MuzArbuzServiceAdapter: ServiceAdapter {
   lazy var bookmarks = Bookmarks(MuzArbuzServiceAdapter.bookmarksFileName)
   lazy var history = History(MuzArbuzServiceAdapter.historyFileName)
 
-  var bookmarksManager: BookmarksManager?
-  var historyManager: HistoryManager?
+  lazy var bookmarksManager = BookmarksManager(bookmarks)
+  lazy var historyManager = HistoryManager(history)
 
   public init(mobile: Bool=false) {
     super.init(dataSource: MuzArbuzDataSource(), mobile: mobile)
-
-    bookmarksManager = BookmarksManager(bookmarks)
-    historyManager = HistoryManager(history)
 
     pageLoader.pageSize = 12
     pageLoader.rowSize = 6
@@ -71,6 +68,8 @@ class MuzArbuzServiceAdapter: ServiceAdapter {
     conf["mobile"] = mobile
     conf["bookmarksManager"] = bookmarksManager
     conf["historyManager"] = historyManager
+    conf["dataSource"] = dataSource
+    conf["storyboardId"] =  GidOnlineServiceAdapter.StoryboardId
 
     return conf
   }
