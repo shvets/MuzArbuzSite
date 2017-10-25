@@ -195,30 +195,4 @@ class MuzArbuzDataSource: DataSource {
     return newItems
   }
 
-  func getLetters(_ items: [NameClassifier.ItemsGroup]) -> [String] {
-    var rletters = [String]()
-    var eletters = [String]()
-
-    for item in items {
-      let groupName = item.key
-
-      let index = groupName.index(groupName.startIndex, offsetBy: 0)
-
-      let letter = String(groupName[index])
-
-      if (letter >= "a" && letter <= "z") || (letter >= "A" && letter <= "Z") {
-        if !eletters.contains(letter) {
-          eletters.append(letter)
-        }
-      }
-      else if (letter >= "а" && letter <= "я") || (letter >= "А" && letter <= "Я") {
-        if !rletters.contains(letter) {
-          rletters.append(letter)
-        }
-      }
-    }
-
-    return rletters + eletters
-  }
-
 }
